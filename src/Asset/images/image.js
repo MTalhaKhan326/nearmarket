@@ -8,7 +8,8 @@ import shop2 from "./shop2.jpg"
 import shop3 from "./shop3.jpg"
 import shop4 from "./shop4.jpg"
 import search from "./icons8-search.svg"
-import phone from "./pngphone.png"
+import phone from "./icons8-phone-50.png"
+import logoo from "./logoo.png"
 
 export const AppImages = {
     loading,
@@ -21,5 +22,6 @@ export const AppImages = {
     shop3,
     shop4,
     search,
-    phone
+    phone,
+    logoo
 }

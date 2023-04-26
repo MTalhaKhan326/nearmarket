@@ -31,11 +31,23 @@ const HomePage = () => {
   return (
     <>
       <form className="flex flex-col justify-center items-center h-screen">
-        <img
-          src={AppImages.logo}
-          alt="Logo"
-          className="mb-[15px]  md:mb-[30px] md:w-[18%] md:h-[11%]"
-        />
+        {/* <div className="mb-[15px]  md:mb-[30px] md:w-[20%] md:h-[12%]"> */}
+        {/* <div className="block md:hidden">
+          <img
+            src={AppImages.logo}
+            alt="Logo"
+            className="mb-[15px]"
+          />
+        </div> */}
+        
+          <img
+            src={AppImages.logoo}
+            alt="Logo"
+            className=" w-[38%] sm:w-[20%] md:w-[18%] md:mb-[16px] mb-[25px]"
+          />
+      
+
+        {/* </div> */}
         <div className="flex items-center w-5/5">
           <input
             type="text"
@@ -46,7 +58,7 @@ const HomePage = () => {
             }}
           />
           <Link
-            to={`/businessPage/${formFields.search}/${location.latitude}/${location.longitude}`}
+            to={`/search?q=${formFields.search}&lat=${location.latitude}&lng=${location.longitude}`}
           >
             <button className="px-4 py-2 bg-gray-200 text-white rounded-r-lg">
               <img
